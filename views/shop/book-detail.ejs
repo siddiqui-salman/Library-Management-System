@@ -1,0 +1,24 @@
+<%- include('../includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+        <main class="centered">
+            <h1><%= book.title %></h1>
+            <hr>
+            <div class="image">
+                <img src="/<%= book.imageUrl %>" alt="<%= book.title %>">
+            </div>
+            <h2>Author Name: <%= book.authorName %></h2>
+            <h2>Pages: <%= book.pages %></h2>
+            <h2>Publisher: <%= book.publisher %></h2>
+            <h2>ISBN: <%= book.isbn %></h2>
+            <h2>Summary</h2>
+            <p><%= book.summary %></p>
+            <h2>Reviews</h2>
+            <p><%= book.reviews %></p>
+            <% if (isAuthenticated) { %>
+                <%- include('../includes/add-to-cart.ejs', {book: book}) %>
+            <% } %>
+        </main>
+        <%- include('../includes/end.ejs') %>
