@@ -1,0 +1,4 @@
+# Library-Management-System
+A library management system that allows the user to add or remove books in his or her library
+
+The goal of the project was to create a library management system using NodeJs and optional backend database options like mySQL, MongoDB and Postgre to name a few. The library management system is a web application that has CRUD operation feature on the admin side as well as the user side. The user of the library can check in and check out, browse the books, and see details about the book. Operations pertaining to the user end affect database based on the CRUD operation and similarly on the admin side in case of updating the inventory or adding or deleting new books. As mentioned above, it is still under works and we will demonstrate what it can do so far and what the future iterations of the project will look like and what will it be expected to do.
